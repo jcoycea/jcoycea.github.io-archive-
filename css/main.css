@@ -1,0 +1,731 @@
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  cursor: url(http://www.sfu.ca/~jaquino/big-dot.png) 14 14, auto;
+}
+
+h1 { /* project description */
+	font-family: "Canela-Thin", calluna, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;;
+}
+
+h2 { /* subheader 1 */
+  font-family: nimbus-sans-extended, sans-serif;
+	font-size: 1.4rem;
+	font-weight: 700;
+  letter-spacing: 0.0rem;
+}
+
+h3 { /* subheader 2 */
+  font-family: nimbus-sans-extended, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem; /* 1.25px; */
+  text-transform: uppercase;
+}
+
+h4 { /* project details */
+  font-family: nimbus-sans-extended, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+h5, figcaption { /* single photo captions */
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+	font-size: 0.8rem;
+	color: #666;
+}
+
+p {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.03rem;
+}
+
+ul, li {
+  list-style: circle;
+}
+
+a {
+  color: #000;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+  cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
+}
+
+a:active, a:hover, a:focus {
+  color: #4151a3;
+}
+
+code {
+  display: block;
+  background-color: #EEE;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.5rem;
+  line-height: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: normal;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/***** STYLE GUIDE TITLE HEADINGS *****/
+
+.main_heading {
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.sub_heading {
+  margin-top: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.small_heading {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/***** STYLE GUIDE INTERACTIVE ELEMENTS *****/
+
+.current_link {
+  color: darkgray;
+}
+
+#sg_menu {
+  display: block;
+  text-align: center;
+}
+
+.sg_main_nav {
+  width: 100%;
+  top: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.main_nav_item {
+  padding: 0.8rem 1.5rem;
+  transition: color 0.3s ease-out;
+
+  text-decoration: none;
+  text-align: center;
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  color: #000;
+}
+
+.intext-link {
+  color: #000;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.01em;
+}
+
+.intext-link:hover {
+  color: #4151a3;
+}
+
+.sg-copyright-links {
+  text-align: center;
+  margin: 2em 2em 2em 0;
+}
+
+.sg-copyright-links a {
+  font-family: nimbus-sans-extended, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.7rem;
+  color: #666;
+  text-align: right;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.sg-copyright-links a:hover, .citations-links a:hover {
+  color: #4151a3;
+}
+
+.citations-links a {
+  color: #000;
+}
+
+/***** STYLE GUIDE BRANDING *****/
+
+.palette_container .color_title {
+  text-align: center;
+}
+
+#swatch1, #swatch2, #swatch3, #swatch4 {
+  flex-grow: 1;
+  flex-basis: 12rem;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0.5rem;
+  height: 3rem;
+}
+
+#swatch1 {
+  background-color: #4151a3;
+  color: #FFF;
+}
+
+#swatch2 {
+  background-color: #FAFAFA;
+  border: 1px solid #000;
+}
+
+#swatch3 {
+  background-color: #313131;
+  color: #FFF;
+}
+
+#swatch4 {
+  background-color: #000;
+  color: #FFF;
+}
+
+.canela_font, .canela_specimen  {
+	font-family: "Canela-Thin", calluna, serif;
+  margin-bottom: 0;
+}
+
+.nimbus_font, .nimbus_specimen  {
+  font-family: nimbus-sans, sans-serif;
+  margin-bottom: 0;
+}
+
+.nimbus_extended_font, .nimbus_extended_specimen {
+  font-family: nimbus-sans-extended, sans-serif;
+  margin-bottom: 0;
+}
+
+.canela_specimen, .nimbus_specimen, .nimbus_extended_specimen {
+  line-height: 2.6rem;
+  font-size: 2rem;
+}
+
+.font-usage {
+  margin-right: 20%;
+}
+
+/***** PROJECT LAYOUT SECTION *****/
+
+#project1 {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.project_container {
+  margin-left: 22%;
+  margin-right: 22%;
+}
+
+.project_brief {
+  margin: 1em 2.5em 4em 2.5em;
+  padding: 0;
+}
+
+.project_brief .main-title {
+  line-height: 2.9rem;
+  font-size: 2.4rem;
+}
+
+.project-desc .col-8-12 {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.project-specs .col-4-12 {
+  padding: 1.5rem;
+}
+
+.project-specs p {
+  margin-top: 0.2rem;
+}
+
+.specs-title {
+  margin-bottom: 0.5em;
+}
+
+.specs-content {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.project-analysis {
+  padding-top: 2em;
+}
+
+.sub-title1 {
+  margin-top: 4rem;
+}
+
+.sub-title2 {
+  margin-bottom: 0.1rem;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  margin-top: 3em; /* more space above project hero image */
+}
+
+.overlap-middle-image {
+  margin: 4em 15% 4em 15%;
+  text-align: center;
+}
+
+.middle-image {
+  text-align: center;
+  margin: 3em 0 3em 0;
+}
+
+figcaption {
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
+.final-product {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.final-product .col-1-2 {
+  padding: 0 2rem;
+  background-color: #EBEBED;
+}
+
+.final-product .col-1-2 img {
+  margin: 0;
+}
+
+.project-pagination {
+  margin-top: 8em;
+}
+
+.pagination-container {
+  background-color: #7B7B7B;
+  padding: 3em 0;
+}
+
+.previous-title, .next-title {
+  color: #FFF;
+  line-height: 2.5rem;
+  font-size: 2rem;
+
+  display: inline-block;
+  padding: 0.1em;
+  margin: 0.25em 0;
+}
+
+.previous-title:hover, .next-title:hover {
+  color: #4151a3;
+}
+
+.prev-project-name, .next-project-name {
+  font-family: nimbus-sans-extended, sans-serif;
+	font-weight: 700;
+}
+
+.next-project-name {
+  padding-right: 0.4rem;
+}
+
+.prev-project-name {
+  padding-left: 0.4rem;
+}
+
+/***** ABOUT SECTION LAYOUT *****/
+
+#about-page {
+  background-color: #7B7B7B; /* #313131; */
+  color: #FFF;
+}
+
+#about-page .main_nav {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#about {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+#about-page .main_nav_left, #about-page .intext-link {
+  color: #FFF;
+}
+
+#about-page .intext-link {
+  border-bottom: 1px solid #FFF;
+}
+
+#about-page .main_nav_left:hover, #about-page .main_nav_left:focus,
+#about-page .intext-link:hover, #about-page .intext-link:focus,
+.copyright-links a:hover, #about-page .copyright-links a:focus {
+  color: #4151a3;
+}
+
+#about-page .intext-link:hover {
+  color: #4151a3;
+  border: none;
+}
+
+.about-me .push-1-3, .about-me .push-2-3 {
+  padding: 0;
+}
+
+.about-image {
+  width: 20%; /* 14em; */
+  display: inline;
+  position: fixed;
+  margin: 0 0 3em 3em;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.about-image:hover {
+  cursor: url(http://www.sfu.ca/~jaquino/smiley-dot.png) 10 10, auto;
+}
+
+.about-title {
+  line-height: 3.2rem;
+  font-size: 2.5rem;
+}
+
+.about-text {
+  margin-top: 1.5rem;
+}
+
+.about-desc {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.currently {
+  font-family: "Canela-Thin", calluna, serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.about-contact {
+  margin-top: 2.5rem;
+}
+
+#sg-about .about-links {
+  color: #000;
+}
+
+.about-links {
+  color: #FFF; /* 000; */
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.page_footer {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.footer_copyright .col-2-3 {
+  padding: 0;
+}
+
+.copyright-text {
+  float: left;
+  margin: 2em 0 0 0;
+}
+
+.copyright-text a {
+  font-family: nimbus-sans-extended, sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+  color: #FFF; /* #666; */
+  text-align: left;
+  align-items: center;
+  padding: 0;
+}
+
+.copyright-links {
+  float: right;
+  margin: 2em 0 0 0;
+}
+
+.copyright-links a {
+  font-family: nimbus-sans-extended, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.7rem;
+  color: #FFF; /* #666; */
+  text-align: right;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+/***** PORTFOLIO HOME *****/
+
+.main_nav {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  z-index: 100;
+}
+
+
+.main_nav .col-1-1, .footer .col-1-1 {
+  padding-right: 0;
+}
+
+.main_nav_left, .main_nav_right {
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  color: #000;
+}
+
+.main_nav_left {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+
+.main_nav_right {
+  float: right;
+  margin: 1em 0 1em 1em;
+}
+
+#project-list, #project-grid {
+  margin-top: 10em;
+}
+
+#project-grid {
+  margin-bottom: 6em;
+}
+
+#tealeaves, #manulife, #caseit,
+#locale, #illustrations, #graphic-archive {
+  margin-top: 8em;
+}
+
+#project-list .main-title {
+  line-height: 2.9rem;
+  font-size: 2.4rem;
+
+  display: inline-block;
+  padding: 0;
+  margin: 0.25em 0;
+}
+
+.bold-project-name {
+  font-family: nimbus-sans-extended, sans-serif;
+	font-weight: 700;
+  padding-right: 0.4rem;
+}
+
+.project-link {
+  color: #000;
+}
+
+.centred {
+  text-align: center;
+}
+
+.prototype-gif {
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.footer_left, .footer_right {
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  color: #000;
+}
+
+.footer_left {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+
+.footer_right {
+  float: right;
+  margin: 1em 0 1em 1em;
+}
+
+#project-grid .project {
+  margin-bottom: 2.5em;
+}
+
+#project-grid .col-1-2 {
+  padding: 0;
+}
+
+#project-grid .bold-project-name {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-family: nimbus-sans-extended, sans-serif;
+	font-weight: 700;
+
+  z-index: 2;
+  position: absolute;
+  padding: 0;
+  margin: 2em 3em 0 3em;
+}
+
+#project-grid .main-title {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+
+  z-index: 2;
+  position: absolute;
+  padding: 0;
+  margin: 3.6em 3em 0 3em;
+}
+
+.grid-thumbnail {
+  padding: 0 1.5em;
+  background-color: #FFF;
+}
+
+.grid-thumbnail:hover {
+  opacity: 0.6;
+  transition: 0.3s ease-out;
+}
+
+.toggle-btn {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+
+  text-decoration: none;
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
+}
+
+.toggle-btn:hover {
+  color: #4151a3;
+}
+
+.toggle-btn.active {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.01em;
+}
+
+.index-slash {
+  margin: 0 0.5em;
+}
+
+/***** PORTFOLIO ILLUSTRATIONS *****/
+
+.illustration-grid {
+  width: 90%;
+	margin: 3em auto;
+	column-gap: 1em;
+  column-width: 30em;
+}
+
+.illustration-grid figure {
+	margin: 0.5em;
+  display: inline-block;
+}
+
+.illustration-grid figure img {
+  width: 100%;
+  height: auto;
+}
+
+.illustration-grid figure figcaption, .project-hero figcaption {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+
+  padding-bottom: 3em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #666;
+}
+
+/***** PORTFOLIO SLIDESHOW *****/
+
+.carousel {
+  margin-bottom: 2em;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
+.carousel-cell-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+.slide-caption {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  padding: 0 3em;
+  width: 100%;
+}
