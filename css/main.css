@@ -169,7 +169,9 @@ img {
   padding: 0 1rem 1rem 1rem;
 }
 
-#caseit .project_brief .main-title {
+#caseit .project_brief .main-title,
+#illustrations .project_brief .main-title,
+#graphic-archive .project_brief .main-title {
   line-height: 2.9rem;
   font-size: 2.4rem;
   text-align: center;
@@ -177,21 +179,29 @@ img {
   margin-right: 10%;
 }
 
-#caseit .project-desc .col-1-1 {
+#caseit .project-desc .col-1-1,
+#illustrations .project-desc .col-1-1,
+#graphic-archive .project-desc .col-1-1 {
   padding: 0 1rem 1rem 1rem;
 }
 
-#caseit .fullscreen-image {
+#caseit .fullscreen-image,
+#illustrations .fullscreen-image,
+#graphic-archive .fullscreen-image{
   width: 100%;
   height: auto;
   margin-top: 1.5em; /* more space above project hero image */
 }
 
-#caseit .project-analysis {
+#caseit .project-analysis,
+#illustrations .project-analysis,
+#graphic-archive .project-analysis {
   padding-top: 0;
 }
 
-#caseit .project-specs .col-1-1 {
+#caseit .project-specs .col-1-1,
+#illustrations .project-specs .col-1-1,
+#graphic-archive .project-specs .col-1-1 {
   padding: 0;
   margin-bottom: 2rem;
 }
@@ -276,13 +286,23 @@ figcaption {
   padding: 3em 0;
 }
 
-#caseit .pagination-container {
+#caseit .pagination-container,
+#illustrations .pagination-container,
+#graphic-archive .pagination-container,
+#locale .pagination-container,
+#manulife .pagination-container,
+#tealeaves .pagination-container {
   background-color: #FFF;
   padding: 3em 0;
   vertical-align: middle;
 }
 
-#caseit .previous-title {
+#caseit .previous-title,
+#illustrations .previous-title,
+#graphic-archive .previous-title,
+#locale .previous-title,
+#manulife .previous-title,
+#tealeaves .previous-title {
   color: #000;
   line-height: 2.5rem;
   font-size: 2rem;
@@ -299,11 +319,17 @@ figcaption {
   height: 150px;
   display: inline-block;
   left: 50%;
+  right: 50%;
   margin: 0 1.5em;
   vertical-align: top;
 }
 
-#caseit .next-title {
+#caseit .next-title,
+#illustrations .next-title,
+#graphic-archive .next-title,
+#locale .next-title,
+#manulife .next-title,
+#tealeaves .next-title {
   color: #000;
   line-height: 2.5rem;
   font-size: 2rem;
