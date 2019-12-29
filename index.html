@@ -1,6 +1,9 @@
 <!--
-  Hello, nice to see you back here!
-  Developed by Joyce Aquino
+  Hey, nice seeing you back here!
+
+  Code fueled by matcha tea lattes
+  Website developed by Joyce Aquino
+
   https://joyceaquino.ca
 -->
 
@@ -28,8 +31,21 @@
       <nav class="main_nav">
         <div class="grid grid-pad">
           <div class="col-1-1">
-            <a href="index.html" class="main_nav_left">Joyce Aquino</a>
-            <a href="about.html" class="main_nav_right">About</a>
+
+            <div class="main_nav_left">
+              <a href="index.html">Joyce Aquino</a>
+              <div>Visual & UX Designer</div>
+            </div>
+
+            <div class="main_nav_right">
+              <a href="about.html">Information</a>
+              <div id="btnContainer">
+                <!-- <span class="index-slash">/</span> -->
+                <a href="index-grid.html" class="toggle-btn">Thumbnails</a> 
+                <a href="#" class="toggle-btn active">List</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </nav>
@@ -40,6 +56,12 @@
 
     <section id="project-list">
       <div class="grid grid-pad">
+
+        <div class="col-1-1 project">
+          <a href="tealeaves.html" class="project-link">
+            <h1 class="main-title"><span class="bold-project-name">TEALEAVES</span> Visual Design, Packaging, Web</h1>
+          </a>
+        </div>
 
         <div class="col-1-1 project">
           <a href="managing-health-insurance.html" class="project-link">
@@ -65,24 +87,26 @@
           </a>
         </div>
 
+        <div class="col-1-1 project">
+          <a href="graphic-archive.html" class="project-link">
+            <h1 class="main-title"><span class="bold-project-name">Graphic Archive</span> Editorial, Print, Layout</h1>
+          </a>
+        </div>
+
       </div>
     </section>
 
     <footer>
+
       <div class="footer">
         <div class="grid grid-pad">
           <div class="col-1-1">
-
             <a href="mailto:jaquino@sfu.ca?Subject=Hello!" class="footer_left">Get In Touch</a>
-            <div id="btnContainer" class="footer_right">
-              <a href="#" class="toggle-btn active">List</a>
-              <span class="index-slash">/</span>
-              <a href="index-grid.html" class="toggle-btn">Grid</a>
-            </div>
-
+            <a href="https://www.instagram.com/jcoycea/" target="_blank" class="footer_right">Instagram</a>
           </div>
         </div>
       </div>
+
     </footer>
 
   </body>

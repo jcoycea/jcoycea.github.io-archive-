@@ -18,22 +18,22 @@ h1 { /* project description */
 }
 
 h2 { /* subheader 1 */
-  font-family: nimbus-sans-extended, sans-serif;
-	font-size: 1.4rem;
-	font-weight: 700;
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
   letter-spacing: 0.0rem;
 }
 
 h3 { /* subheader 2 */
-  font-family: nimbus-sans-extended, sans-serif;
-  font-size: 0.95rem;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.08rem; /* 1.25px; */
   text-transform: uppercase;
 }
 
 h4 { /* project details */
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -41,17 +41,19 @@ h4 { /* project details */
 }
 
 h5, figcaption { /* single photo captions */
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
-	font-size: 0.8rem;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
 	color: #666;
 }
 
 p {
-  font-family: nimbus-sans, sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.4rem;
   letter-spacing: 0.03rem;
 }
@@ -106,7 +108,7 @@ img {
 .small_heading {
   margin-top: 2rem;
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /***** STYLE GUIDE INTERACTIVE ELEMENTS *****/
@@ -115,25 +117,13 @@ img {
   color: darkgray;
 }
 
-#sg_menu {
-  display: block;
-  text-align: center;
-}
-
-.sg_main_nav {
-  width: 100%;
-  top: 0;
-  position: relative;
-  z-index: 100;
-}
-
 .main_nav_item {
   padding: 0.8rem 1.5rem;
   transition: color 0.3s ease-out;
 
   text-decoration: none;
   text-align: center;
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
 
   font-size: 1rem;
   font-weight: 400;
@@ -143,97 +133,14 @@ img {
 
 .intext-link {
   color: #000;
-  font-family: nimbus-sans-extended, sans-serif;
-  font-weight: 700;
-  border-bottom: 1px solid #000;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 500;
+  border-bottom: 1px dotted #000;
   padding-bottom: 0.01em;
 }
 
 .intext-link:hover {
   color: #4151a3;
-}
-
-.sg-copyright-links {
-  text-align: center;
-  margin: 2em 2em 2em 0;
-}
-
-.sg-copyright-links a {
-  font-family: nimbus-sans-extended, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  font-size: 0.7rem;
-  color: #666;
-  text-align: right;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-
-.sg-copyright-links a:hover, .citations-links a:hover {
-  color: #4151a3;
-}
-
-.citations-links a {
-  color: #000;
-}
-
-/***** STYLE GUIDE BRANDING *****/
-
-.palette_container .color_title {
-  text-align: center;
-}
-
-#swatch1, #swatch2, #swatch3, #swatch4 {
-  flex-grow: 1;
-  flex-basis: 12rem;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0.5rem;
-  height: 3rem;
-}
-
-#swatch1 {
-  background-color: #4151a3;
-  color: #FFF;
-}
-
-#swatch2 {
-  background-color: #FAFAFA;
-  border: 1px solid #000;
-}
-
-#swatch3 {
-  background-color: #313131;
-  color: #FFF;
-}
-
-#swatch4 {
-  background-color: #000;
-  color: #FFF;
-}
-
-.canela_font, .canela_specimen  {
-	font-family: "Canela-Thin", calluna, serif;
-  margin-bottom: 0;
-}
-
-.nimbus_font, .nimbus_specimen  {
-  font-family: nimbus-sans, sans-serif;
-  margin-bottom: 0;
-}
-
-.nimbus_extended_font, .nimbus_extended_specimen {
-  font-family: nimbus-sans-extended, sans-serif;
-  margin-bottom: 0;
-}
-
-.canela_specimen, .nimbus_specimen, .nimbus_extended_specimen {
-  line-height: 2.6rem;
-  font-size: 2rem;
-}
-
-.font-usage {
-  margin-right: 20%;
 }
 
 /***** PROJECT LAYOUT SECTION *****/
@@ -244,8 +151,8 @@ img {
 }
 
 .project_container {
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .project_brief {
@@ -261,6 +168,41 @@ img {
 .project-desc .col-8-12 {
   padding: 0 1rem 1rem 1rem;
 }
+
+#caseit .project_brief .main-title {
+  line-height: 2.9rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#caseit .project-desc .col-1-1 {
+  padding: 0 1rem 1rem 1rem;
+}
+
+#caseit .fullscreen-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em; /* more space above project hero image */
+}
+
+#caseit .project-analysis {
+  padding-top: 0;
+}
+
+#caseit .project-specs .col-1-1 {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+/* #caseit .project-specs #specs-col1 {
+  background: lightpink;
+}
+
+#caseit .project-specs #specs-col2 {
+  background: lightblue;
+} */
 
 .project-specs .col-4-12 {
   padding: 1.5rem;
@@ -334,6 +276,44 @@ figcaption {
   padding: 3em 0;
 }
 
+#caseit .pagination-container {
+  background-color: #FFF;
+  padding: 3em 0;
+  /* text-align: center; */
+}
+
+#caseit .list_project_name {
+  align-items: flex-start;
+}
+
+#caseit .previous-title {
+  color: #000;
+  line-height: 2.5rem;
+  font-size: 2rem;
+
+  text-align: right;
+  padding: 0.1em;
+  margin: 0.25em 0;
+}
+
+.vertical-line {
+  border-left: 1px dotted #000;
+  height: 250px;
+  display: inline-block;
+  left: 50%;
+  margin: 0 1.5em;
+}
+
+#caseit .next-title {
+  color: #000;
+  line-height: 2.5rem;
+  font-size: 2rem;
+
+  text-align: left;
+  padding: 0.1em;
+  margin: 0.25em 0;
+}
+
 .previous-title, .next-title {
   color: #FFF;
   line-height: 2.5rem;
@@ -349,8 +329,8 @@ figcaption {
 }
 
 .prev-project-name, .next-project-name {
-  font-family: nimbus-sans-extended, sans-serif;
-	font-weight: 700;
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
 }
 
 .next-project-name {
@@ -382,7 +362,7 @@ figcaption {
 }
 
 #about-page .intext-link {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px dotted #FFF;
 }
 
 #about-page .main_nav_left:hover, #about-page .main_nav_left:focus,
@@ -424,15 +404,8 @@ figcaption {
 }
 
 .about-desc {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin-bottom: 2rem;
-}
-
-.currently {
-  font-family: "Canela-Thin", calluna, serif;
-  font-weight: 300;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
 }
 
 .about-contact {
@@ -445,9 +418,9 @@ figcaption {
 
 .about-links {
   color: #FFF; /* 000; */
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  border-bottom: 1px dotted #FFF;
 }
 
 .page_footer {
@@ -466,7 +439,7 @@ figcaption {
 }
 
 .copyright-text a {
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   letter-spacing: 0.05rem;
   font-size: 0.7rem;
   color: #FFF; /* #666; */
@@ -481,7 +454,7 @@ figcaption {
 }
 
 .copyright-links a {
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   font-size: 0.7rem;
@@ -510,21 +483,25 @@ figcaption {
 .main_nav_left, .main_nav_right {
   transition: color 0.3s ease-out;
   text-decoration: none;
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk, sans-serif; /* aktiv-grotesk-extended, sans-serif; */
+  text-transform: uppercase;
 
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 400;
+  line-height: 1rem;
   letter-spacing: 1.25px;
   color: #000;
 }
 
 .main_nav_left {
   float: left;
+  text-align: left;
   margin: 1em 1em 1em 0;
 }
 
 .main_nav_right {
   float: right;
+  text-align: right;
   margin: 1em 0 1em 1em;
 }
 
@@ -541,6 +518,10 @@ figcaption {
   margin-top: 8em;
 }
 
+#project-list {
+  text-align: center;
+}
+
 #project-list .main-title {
   line-height: 2.9rem;
   font-size: 2.4rem;
@@ -551,8 +532,9 @@ figcaption {
 }
 
 .bold-project-name {
-  font-family: nimbus-sans-extended, sans-serif;
-	font-weight: 700;
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
+  /* color: darkgray; */
   padding-right: 0.4rem;
 }
 
@@ -579,21 +561,25 @@ figcaption {
 .footer_left, .footer_right {
   transition: color 0.3s ease-out;
   text-decoration: none;
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
 
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 400;
+  line-height: 1rem;
   letter-spacing: 1.25px;
   color: #000;
 }
 
 .footer_left {
   float: left;
+  text-align: left;
   margin: 1em 1em 1em 0;
 }
 
 .footer_right {
   float: right;
+  text-align: right;
   margin: 1em 0 1em 1em;
 }
 
@@ -608,8 +594,9 @@ figcaption {
 #project-grid .bold-project-name {
   line-height: 1.6rem;
   font-size: 1.2rem;
-  font-family: nimbus-sans-extended, sans-serif;
-	font-weight: 700;
+
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
 
   z-index: 2;
   position: absolute;
@@ -645,9 +632,10 @@ figcaption {
   background: none;
 
   text-decoration: none;
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
 
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 1.25px;
   cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
@@ -663,7 +651,7 @@ figcaption {
 }
 
 .index-slash {
-  margin: 0 0.5em;
+  margin: 0 0.1em;
 }
 
 /***** PORTFOLIO ILLUSTRATIONS *****/
@@ -686,7 +674,7 @@ figcaption {
 }
 
 .illustration-grid figure figcaption, .project-hero figcaption {
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
   font-size: 0.65em;
   letter-spacing: 0.05em;
@@ -723,7 +711,12 @@ figcaption {
 }
 
 .slide-caption {
-  font-size: 0.8rem;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+
   color: #666;
   text-align: center;
   padding: 0 3em;
