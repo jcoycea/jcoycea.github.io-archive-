@@ -122,6 +122,23 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
     margin: 0;
   }
 
+  #caseit .project_brief .main-title {
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    #caseit .previous-title, #caseit .next-title   {
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
   #project-list .project {
     padding-left: 1.5em;
     padding-right: 1.5em;

@@ -279,11 +279,7 @@ figcaption {
 #caseit .pagination-container {
   background-color: #FFF;
   padding: 3em 0;
-  /* text-align: center; */
-}
-
-#caseit .list_project_name {
-  align-items: flex-start;
+  vertical-align: middle;
 }
 
 #caseit .previous-title {
@@ -294,14 +290,17 @@ figcaption {
   text-align: right;
   padding: 0.1em;
   margin: 0.25em 0;
+
+  vertical-align: text-top;
 }
 
 .vertical-line {
   border-left: 1px dotted #000;
-  height: 250px;
+  height: 150px;
   display: inline-block;
   left: 50%;
   margin: 0 1.5em;
+  vertical-align: top;
 }
 
 #caseit .next-title {
@@ -312,6 +311,8 @@ figcaption {
   text-align: left;
   padding: 0.1em;
   margin: 0.25em 0;
+
+  vertical-align: text-top;
 }
 
 .previous-title, .next-title {
