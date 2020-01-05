@@ -177,7 +177,8 @@ img {
 #caseit .project_brief .main-title,
 #illustrations .project_brief .main-title,
 #graphic-archive .project_brief .main-title,
-#tealeaves .project_brief .main-title {
+#tealeaves .project_brief .main-title,
+#manulife .project_brief .main-title {
   line-height: 2.9rem;
   font-size: 2.4rem;
   text-align: center;
@@ -188,14 +189,16 @@ img {
 #caseit .project-desc .col-1-1,
 #illustrations .project-desc .col-1-1,
 #graphic-archive .project-desc .col-1-1,
-#tealeaves .project-desc .col-1-1 {
+#tealeaves .project-desc .col-1-1,
+#manulife .project-desc .col-1-1  {
   padding: 0 1rem 1rem 1rem;
 }
 
 #caseit .fullscreen-image,
 #illustrations .fullscreen-image,
 #graphic-archive .fullscreen-image,
-#tealeaves .fullscreen-image {
+#tealeaves .fullscreen-image,
+#manulife .fullscreen-image {
   width: 100%;
   height: auto;
   margin-top: 1.5em; /* more space above project hero image */
@@ -204,14 +207,16 @@ img {
 #caseit .project-analysis,
 #illustrations .project-analysis,
 #graphic-archive .project-analysis,
-#tealeaves .project-analysis {
+#tealeaves .project-analysis,
+#manulife .project-analysis {
   padding-top: 0;
 }
 
 #caseit .project-specs .col-1-1,
 #illustrations .project-specs .col-1-1,
 #graphic-archive .project-specs .col-1-1,
-#tealeaves .project-specs .col-1-1 {
+#tealeaves .project-specs .col-1-1,
+#manulife .project-specs .col-1-1 {
   padding: 0;
   margin-bottom: 2rem;
 }
