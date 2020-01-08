@@ -84,6 +84,16 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
   .copyright-links {
     float: none;
   }
+
+  #construction-portfolio {
+    text-align: left;
+    margin: 10%;
+  }
+
+  #construction-portfolio .main-title {
+    line-height: 3.2rem;
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 690px) {
@@ -122,7 +132,7 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
     margin: 0;
   }
 
-  #caseit .project_brief .main-title { 
+  #caseit .project_brief .main-title {
     line-height: 2.4rem;
     font-size: 1.8rem;
     margin-left: 0;
