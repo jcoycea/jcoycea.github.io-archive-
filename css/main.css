@@ -11,24 +11,26 @@ html {
 }
 
 h1 { /* project description */
-	font-family: "Canela-Thin", calluna, serif;
+  font-family: 'Canela Text Web', calluna, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+
   font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 0.05rem;;
+  letter-spacing: 0.01rem;
 }
 
 h2 { /* subheader 1 */
   font-family: aktiv-grotesk-extended, sans-serif;
 	font-size: 1.25rem;
-	font-weight: 500;
-  letter-spacing: 0.0rem;
+	font-weight: 400;
 }
 
 h3 { /* subheader 2 */
   font-family: aktiv-grotesk-extended, sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  letter-spacing: 0.08rem; /* 1.25px; */
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
 }
 
@@ -49,13 +51,17 @@ h5, figcaption { /* single photo captions */
 	color: #666;
 }
 
+figcaption {
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
 p {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.85rem;
+  font-size: 0.9rem; /* 0.85rem; */
   line-height: 1.4rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.04rem;
 }
 
 ul, li {
@@ -76,16 +82,7 @@ a {
 
 a:active, a:hover, a:focus {
   color: #4151a3;
-}
-
-code {
-  display: block;
-  background-color: #EEE;
-  padding: 0.5rem 0.8rem;
-  margin-top: 0.5rem;
-  line-height: 1.1rem;
-  font-size: 0.95rem;
-  font-weight: normal;
+  font-style: italic;
 }
 
 img {
@@ -93,47 +90,6 @@ img {
   height: auto;
   max-width: 100%;
   max-height: 100%;
-}
-
-/***** STYLE GUIDE TITLE HEADINGS *****/
-
-.main_heading {
-  border-top: 1px #000 solid;
-  border-bottom: 1px #000 solid;
-
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.sub_heading {
-  margin-top: 3rem;
-  margin-bottom: 0.8rem;
-}
-
-.small_heading {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-
-/***** STYLE GUIDE INTERACTIVE ELEMENTS *****/
-
-.current_link {
-  color: darkgray;
-}
-
-.main_nav_item {
-  padding: 0.8rem 1.5rem;
-  transition: color 0.3s ease-out;
-
-  text-decoration: none;
-  text-align: center;
-  font-family: aktiv-grotesk-extended, sans-serif;
-
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 1.25px;
-  color: #000;
 }
 
 .intext-link {
@@ -148,387 +104,78 @@ img {
   color: #4151a3;
 }
 
-/***** PROJECT LAYOUT SECTION *****/
-
-#project1 {
-  padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.project_container {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.project_brief {
-  margin: 1em 2.5em 4em 2.5em;
-  padding: 0;
-}
-
-.project_brief .main-title {
-  line-height: 2.9rem;
-  font-size: 2.4rem;
-}
-
-.project-desc .col-8-12 {
-  padding: 0 1rem 1rem 1rem;
-}
-
-#caseit .project_brief .main-title,
-#illustrations .project_brief .main-title,
-#graphic-archive .project_brief .main-title,
-#tealeaves .project_brief .main-title,
-#manulife .project_brief .main-title,
-#locale .project_brief .main-title {
-  line-height: 2.9rem;
-  font-size: 2.4rem;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-#caseit .project-desc .col-1-1,
-#illustrations .project-desc .col-1-1,
-#graphic-archive .project-desc .col-1-1,
-#tealeaves .project-desc .col-1-1,
-#manulife .project-desc .col-1-1,
-#locale .project-desc .col-1-1 {
-  padding: 0 1rem 1rem 1rem;
-}
-
-#caseit .fullscreen-image,
-#illustrations .fullscreen-image,
-#graphic-archive .fullscreen-image,
-#tealeaves .fullscreen-image,
-#manulife .fullscreen-image,
-#locale .fullscreen-image {
-  width: 100%;
-  height: auto;
-  margin-top: 1.5em; /* more space above project hero image */
-}
-
-#caseit .project-analysis,
-#illustrations .project-analysis,
-#graphic-archive .project-analysis,
-#tealeaves .project-analysis,
-#manulife .project-analysis,
-#locale .project-analysis {
-  padding-top: 0;
-}
-
-#caseit .project-specs .col-1-1,
-#illustrations .project-specs .col-1-1,
-#graphic-archive .project-specs .col-1-1,
-#tealeaves .project-specs .col-1-1,
-#manulife .project-specs .col-1-1,
-#locale .project-specs .col-1-1 {
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-/* #caseit .project-specs #specs-col1 {
-  background: lightpink;
-}
-
-#caseit .project-specs #specs-col2 {
-  background: lightblue;
-} */
-
-.project-specs .col-4-12 {
-  padding: 1.5rem;
-}
-
 .project-specs p {
   margin-top: 0.2rem;
 }
 
-.specs-title {
-  margin-top: 1.8em;
-  margin-bottom: 0.5em;
+/*
+ ----------------------------------------------------------------------------------
+ PORTFOLIO COLUMN CSS - FEBRUARY 22
+ ----------------------------------------------------------------------------------
+*/
+
+#tealeaves, #manulife, #caseit, #locale,
+#illustrations, #graphic-archive {
+  background: #FBFBFB;
 }
 
-.specs-content {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+#project-column-list,
+#project-column-thumbnail {
+  background: #333; /* #000000; */
 }
 
-.project-analysis {
-  padding-top: 2em;
-}
-
-.sub-title1 {
-  margin-top: 4rem;
-}
-
-.sub-title2 {
-  margin-bottom: 0.1rem;
-}
-
-.fullscreen-image {
-  width: 100%;
-  height: auto;
-  margin-top: 3em; /* more space above project hero image */
-}
-
-.overlap-middle-image {
-  margin: 4em 15% 4em 15%;
-  text-align: center;
-}
-
-.middle-image {
-  text-align: center;
-  margin: 3em 0 3em 0;
-}
-
-figcaption {
-  margin: 1rem 2.5rem 0 2.5rem;
-}
-
-.final-product {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-.final-product .col-1-2 {
-  padding: 0 2rem;
-  background-color: #EBEBED;
-}
-
-.final-product .col-1-2 img {
-  margin: 0;
-}
-
-.project-pagination {
-  margin-top: 8em;
-}
-
-.pagination-container {
-  background-color: #7B7B7B;
-  padding: 3em 0;
-}
-
-#caseit .pagination-container,
-#illustrations .pagination-container,
-#graphic-archive .pagination-container,
-#locale .pagination-container,
-#manulife .pagination-container,
-#tealeaves .pagination-container {
-  background-color: #FFF;
-  padding: 3em 0;
-  vertical-align: middle;
-}
-
-#caseit .previous-title,
-#illustrations .previous-title,
-#graphic-archive .previous-title,
-#locale .previous-title,
-#manulife .previous-title,
-#tealeaves .previous-title {
-  color: #000;
-  line-height: 2.5rem;
-  font-size: 2rem;
-
-  text-align: right;
-  padding: 0.1em;
-  margin: 0.25em 0;
-
-  vertical-align: text-top;
-}
-
-.vertical-line {
-  border-left: 1px dotted #000;
-  height: 150px;
-  display: inline-block;
-  left: 50%;
-  right: 50%;
-  margin: 0 1.5em;
-  vertical-align: top;
-}
-
-#caseit .next-title,
-#illustrations .next-title,
-#graphic-archive .next-title,
-#locale .next-title,
-#manulife .next-title,
-#tealeaves .next-title {
-  color: #000;
-  line-height: 2.5rem;
-  font-size: 2rem;
-
-  text-align: left;
-  padding: 0.1em;
-  margin: 0.25em 0;
-
-  vertical-align: text-top;
-}
-
-.previous-title, .next-title {
-  color: #FFF;
-  line-height: 2.5rem;
-  font-size: 2rem;
-
-  display: inline-block;
-  padding: 0.1em;
-  margin: 0.25em 0;
-}
-
-.previous-title:hover, .next-title:hover {
-  color: #4151a3;
-}
-
-.prev-project-name, .next-project-name {
-  font-family: aktiv-grotesk-extended, sans-serif;
-	font-weight: 500;
-}
-
-.next-project-name {
-  padding-right: 0.4rem;
-}
-
-.prev-project-name {
-  padding-left: 0.4rem;
-}
-
-/***** ABOUT SECTION LAYOUT *****/
-
-#about-page {
-  background-color: #7B7B7B; /* #313131; */
-  color: #FFF;
-}
-
-#about-page .main_nav {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#about {
-  margin-top: 1em;
-  margin-bottom: 3em;
-}
-
-#about-page .main_nav_left, #about-page .intext-link {
-  color: #FFF;
-}
-
-#about-page .intext-link {
-  border-bottom: 1px dotted #FFF;
-}
-
-#about-page .main_nav_left:hover, #about-page .main_nav_left:focus,
-#about-page .intext-link:hover, #about-page .intext-link:focus,
-.copyright-links a:hover, #about-page .copyright-links a:focus {
-  color: #4151a3;
-}
-
-#about-page .intext-link:hover {
-  color: #4151a3;
-  border: none;
-}
-
-.about-me .push-1-3, .about-me .push-2-3 {
-  padding: 0;
-}
-
-.about-image {
-  width: 20%; /* 14em; */
-  display: inline;
-  position: fixed;
-  margin: 0 0 3em 3em;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.about-image:hover {
-  cursor: url(http://www.sfu.ca/~jaquino/smiley-dot.png) 10 10, auto;
-}
-
-.about-title {
-  line-height: 3.2rem;
-  font-size: 2.5rem;
-}
-
-.about-text {
-  margin-top: 1.5rem;
-}
-
-.about-desc {
-  /* font-size: 1rem; */
-  margin-bottom: 2rem;
-}
-
-.about-contact {
-  margin-top: 2.5rem;
-}
-
-#sg-about .about-links {
-  color: #000;
-}
-
-.about-links {
-  color: #FFF; /* 000; */
-  font-family: aktiv-grotesk-extended, sans-serif;
-  font-weight: 400;
-  border-bottom: 1px dotted #FFF;
-}
-
-.page_footer {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
-.footer_copyright .col-2-3 {
-  padding: 0;
-}
-
-.copyright-text {
-  float: left;
-  margin: 2em 0 0 0;
-}
-
-.copyright-text a {
-  font-family: aktiv-grotesk-extended, sans-serif;
-  letter-spacing: 0.05rem;
-  font-size: 0.7rem;
-  color: #FFF; /* #666; */
-  text-align: left;
-  align-items: center;
-  padding: 0;
-}
-
-.copyright-links {
-  float: right;
-  margin: 2em 0 0 0;
-}
-
-.copyright-links a {
-  font-family: aktiv-grotesk-extended, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  font-size: 0.7rem;
-  color: #FFF; /* #666; */
-  text-align: right;
-  align-items: center;
-  margin: 0 1.5rem;
-}
-
-/***** PORTFOLIO HOME *****/
-
-.main_nav {
-  width: 100%;
-  top: 0;
+#nav-column, #footer-column {
+  width: 20vw; /* 12em 16.667%; */
+  /* background: lightyellow; */
   position: fixed;
   overflow: hidden;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  z-index: 100;
 }
 
-
-.main_nav .col-1-1, .footer .col-1-1 {
-  padding-right: 0;
+#nav-column {
+  display: inline-block;
 }
 
-.main_nav_left, .main_nav_right {
+#project-column {
+  width: 78vw;
+  margin-left: 20vw;
+}
+
+#project-column-list .main-title {
+  line-height: 2.9rem;
+  font-size: 2.15rem; /* 2.4rem; */
+
+  display: inline-block;
+  padding: 0;
+  margin: 0.25em 0;
+}
+
+#footer-column {
+  margin-bottom: 0.6em;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+  /* z-index: 100; */
+}
+
+.footer_left {
+  text-align: left;
+  margin: 0.3em 2em 0 0;
+  display: block;
+  color: #000;
+}
+
+#portfolio-quick-info,
+#porfolio-toggle-view {
+  float: left;
+  text-align: left;
+  margin: 1em 1em 1em 0;
+}
+
+.side_nav {
   transition: color 0.3s ease-out;
   text-decoration: none;
   font-family: aktiv-grotesk, sans-serif; /* aktiv-grotesk-extended, sans-serif; */
@@ -539,137 +186,19 @@ figcaption {
   line-height: 1rem;
   letter-spacing: 1.25px;
   color: #000;
-}
-
-.main_nav_left {
-  float: left;
-  text-align: left;
-  margin: 1em 1em 1em 0;
-}
-
-.main_nav_right {
-  float: right;
-  text-align: right;
-  margin: 1em 0 1em 1em;
-}
-
-#project-list, #project-grid {
-  margin-top: 10em;
-}
-
-#project-grid {
-  margin-bottom: 6em;
-}
-
-#tealeaves, #manulife, #caseit,
-#locale, #illustrations, #graphic-archive {
-  margin-top: 8em;
-}
-
-#project-list {
-  text-align: center;
-}
-
-#project-list .main-title {
-  line-height: 2.9rem;
-  font-size: 2.4rem;
-
   display: inline-block;
-  padding: 0;
-  margin: 0.25em 0;
 }
 
-.bold-project-name {
-  font-family: aktiv-grotesk-extended, sans-serif;
-	font-weight: 500;
-  /* color: darkgray; */
-  padding-right: 0.4rem;
+#project-column-list .side_nav, #project-column-list .index-btn,
+#project-column-list .toggle-btn, #project-column-list .footer_left,
+#project-column-thumbnail .side_nav, #project-column-thumbnail .index-btn,
+#project-column-thumbnail .toggle-btn, #project-column-thumbnail .footer_left {
+  color: #FFF;
 }
 
-.project-link {
-  color: #000;
-}
-
-.centred {
-  text-align: center;
-}
-
-.prototype-gif {
-  margin: 0;
-}
-
-.footer {
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-  overflow: hidden;
-  z-index: 100;
-}
-
-.footer_left, .footer_right {
-  transition: color 0.3s ease-out;
-  text-decoration: none;
-  font-family: aktiv-grotesk, sans-serif;
-  text-transform: uppercase;
-
-  font-size: 0.6rem;
-  font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 1.25px;
-  color: #000;
-}
-
-.footer_left {
-  float: left;
-  text-align: left;
-  margin: 1em 1em 1em 0;
-}
-
-.footer_right {
-  float: right;
-  text-align: right;
-  margin: 1em 0 1em 1em;
-}
-
-#project-grid .project {
-  margin-bottom: 2.5em;
-}
-
-#project-grid .col-1-2 {
-  padding: 0;
-}
-
-#project-grid .bold-project-name {
-  line-height: 1.6rem;
-  font-size: 1.2rem;
-
-  font-family: aktiv-grotesk-extended, sans-serif;
-	font-weight: 500;
-
-  z-index: 2;
-  position: absolute;
-  padding: 0;
-  margin: 2em 3em 0 3em;
-}
-
-#project-grid .main-title {
-  line-height: 1.6rem;
-  font-size: 1.2rem;
-
-  z-index: 2;
-  position: absolute;
-  padding: 0;
-  margin: 3.6em 3em 0 3em;
-}
-
-.grid-thumbnail {
-  padding: 0 1.5em;
-  background-color: #FFF;
-}
-
-.grid-thumbnail:hover {
-  opacity: 0.6;
-  transition: 0.3s ease-out;
+.btnContainer {
+  float: left; /* NEW */
+  margin-top: 2em;
 }
 
 .toggle-btn {
@@ -687,6 +216,7 @@ figcaption {
   font-weight: 400;
   letter-spacing: 1.25px;
   cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
+  color: #000;
 }
 
 .toggle-btn:hover {
@@ -694,43 +224,168 @@ figcaption {
 }
 
 .toggle-btn.active {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #FFF;
   padding-bottom: 0.01em;
+  /* text-decoration: line-through; */
 }
 
 .index-slash {
   margin: 0 0.1em;
 }
 
-/***** PORTFOLIO ILLUSTRATIONS *****/
-
-.illustration-grid {
-  width: 90%;
-	margin: 3em auto;
-	column-gap: 1em;
-  column-width: 30em;
+.inner-project-column {
+  width: 60vw;
 }
 
-.illustration-grid figure {
-	margin: 0.5em;
-  display: inline-block;
+.full-project-column {
+  width: 75vw;
 }
 
-.illustration-grid figure img {
-  width: 100%;
-  height: auto;
+.column_project_brief .main-title {
+  line-height: 2.7rem;
+  font-size: 2rem;
 }
 
-.illustration-grid figure figcaption, .project-hero figcaption {
+.column-project-hero {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.column_project_container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column-caption {
+  text-align: right;
+  margin-left: 75%;
+  margin-right: 0;
+}
+
+.sub-title1 {
+  font-family: 'Canela Text Web', calluna, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+
+	font-size: 2rem;
+  letter-spacing: 0.01rem;
+  margin-top: 3rem;
+}
+
+.sub-title2 {
+  margin-bottom: 0.1rem;
+}
+
+#sub-intro {
+  margin-bottom: 0.08em;
+}
+
+.project-intro {
+  order: 1;
+  margin-bottom: 3rem;
+  padding-right: 40px;
+}
+
+.project-specs {
+  order: 2;
+  text-align: left;
+  /* float: right; */
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.project-specs.col-4-12 {
+  padding-right: 0;
+  padding-left: 80px;
+}
+
+.project-content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.specs-title {
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 1.25px;
+  color: #000;
+}
+
+.specs-content {
   font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
   font-size: 0.65em;
   letter-spacing: 0.05em;
-
-  padding-bottom: 3em;
   line-height: 1.5em;
-  text-align: center;
   color: #666;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.horizontal-line {
+  border: 1px dotted #000;
+  width: 75vw;
+  text-align: left;
+  margin-left: 0;
+}
+
+.project-last {
+  margin-bottom: 8em;
+}
+
+.pagination-container {
+  padding: 1.5em 0 0 0;
+}
+
+.next-title, .previous-title {
+  color: #000;
+  line-height: 2.7rem;
+  font-size: 2rem;
+
+  text-align: left;
+  margin: 0;
+}
+
+.previous-title:hover, .next-title:hover {
+  color: #4151a3;
+}
+
+.prev-project-name, .next-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-left: 0.4rem;
+}
+
+/* #project-column .main-title:hover {
+  border-bottom: 1px dotted #000;
+  padding-bottom: 1px;
+} */
+
+.bold-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-right: 0.4rem;
+}
+
+.project-link {
+  color: #FFF;
 }
 
 /***** PORTFOLIO SLIDESHOW *****/
@@ -771,17 +426,152 @@ figcaption {
   width: 100%;
 }
 
-#construction-portfolio {
-  text-align: left;
-  margin: 10% 30% 10% 10%;
+#about-column {
+  width: 70vw;
+  margin-left: 20vw;
 }
 
-#construction-portfolio .main-title {
-  line-height: 3.6rem;
-  font-size: 2.6rem;
+.about-title {
+  line-height: 2.7rem;
+  font-size: 2rem;
+  width: 62vw;
+  margin: 0.25em 0;
 }
 
-#construction-portfolio p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.about-contact .specs-content {
+  margin: 0.5em 0;
+}
+
+.contact-title {
+  margin-top: 3em;
+}
+
+.about-links {
+  color: #000;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  border-bottom: 1px dotted #000;
+}
+
+.about-text {
+  margin-top: 2em;
+  width: 65vw;
+}
+
+.about-desc.col-8-12 {
+  /* font-size: 1rem; */
+  margin-bottom: 2rem;
+  padding-right: 40px;
+}
+
+.about-contact.col-4-12 {
+  padding-right: 0;
+  padding-left: 80px;
+  margin-bottom: 3em;
+}
+
+.about-text, .about-desc {
+  vertical-align: top;
+}
+
+#colophon-title {
+  margin-top: 4em;
+}
+
+#colophon-title, #colophon-text,
+#colophon-text .about-links {
+  color: grey;
+}
+
+#colophon-text .about-links {
+  border-bottom: 1px dotted #A2A2A2;
+}
+
+/* #tealeaves .project-specs.col-4-12 {
+  margin-bottom: 1.5em;
+} */
+
+.prototype-gif {
+  margin: 0;
+}
+
+/***** PORTFOLIO ILLUSTRATIONS *****/
+
+.gallery-grid {
+	margin: 3em auto;
+	column-gap: 1em;
+  column-width: 25vw;
+}
+
+.gallery-grid figure,
+#project-column-thumbnail .gallery-grid figure {
+	margin: 0.75em 0;
+  display: inline-block;
+}
+
+.gallery-grid figure img,
+#project-column-thumbnail .gallery-grid figure img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-caption {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+
+  padding-bottom: 3em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #666;
+
+  /* text-align: right;
+  margin-left: 75%;
+  margin-right: 0; */
+}
+
+.process-book {
+  font-family: aktiv-grotesk, sans-serif; /* aktiv-grotesk-extended, sans-serif; */
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 1.25px;
+  color: #666;
+}
+
+#manulife #business-problem {
+  width: 50vw;
+}
+
+#project-column-thumbnail .gallery-grid {
+  column-gap: 1em;
+  column-width: 40vw;
+  margin-top: 0;
+}
+
+#project-column-thumbnail .main-title {
+  font-size: 0.9em;
+
+  display: inline-block;
+  padding: 0;
+  margin: 0.25em 0;
+  color: #FFF;
+}
+
+#project-column-thumbnail .bold-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-right: 0.2rem;
+}
+
+#project-column-thumbnail .gallery-grid .project-thumbnail,
+.gallery-grid .project-thumbnail {
+  margin-bottom: 1.5em;
+}
+
+#project-column-thumbnail #project-column {
+  width: 75vw;
 }

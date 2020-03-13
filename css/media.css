@@ -2,20 +2,147 @@
 SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
 *****/
 
-@media screen and (max-width: 950px) {
-  #manulife-grid .bold-project-name {
-    width: 16em;
-    margin: 2em 2.5em 0 3em;
-  }
-
-  #manulife-grid .main-title {
-    margin: 5em 2.5em 0 3em;
-  }
-}
-
 /* TABLET VIEW */
 
 @media screen and (max-width: 768px) {
+
+  /* NEW - PORTFOLIO COLUMN */
+
+  .side_nav {
+    display: block;
+  }
+
+  #nav-column, #footer-column {
+    width: 90vw; /* 12em 16.667%; */
+    position: relative;
+    overflow: initial;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  #nav-column {
+    display: inline-block;
+  }
+
+  #project-column, #about-column {
+    width: 85vw;
+    margin-left: 1.5em;
+    /* margin-right: 1.5em; */
+  }
+
+  #portfolio-quick-info,
+  #porfolio-toggle-view {
+    float: none;
+  }
+
+  #project-column .main-title, #project-column .bold-project-name {
+    line-height: 2.1rem;
+    font-size: 1.6rem;
+  }
+
+  #project-column .main-title {
+    margin: 0.4em 0;
+  }
+
+  #project-column-thumbnail #project-column {
+    width: 85vw;
+  }
+
+  #project-column-thumbnail .main-title,
+  #project-column-thumbnail .bold-project-name {
+    /* font-size: 1em;
+    color: #FFF; */
+  }
+
+  #project-column-thumbnail .gallery-grid {
+    column-gap: 0;
+    column-width: 85vw;
+  }
+
+  #project-column-thumbnail .gallery-grid figure img {
+    width: 85vw;
+  }
+
+  #footer-column .footer_left {
+    margin-right: 2em;
+  }
+
+  .inner-project-column {
+    width: 85vw;
+  }
+
+  .full-project-column {
+    width: 85vw;
+  }
+
+  .project-intro {
+    order: 2;
+  }
+
+  .project-specs {
+    order: 1;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .project-overview .mobile-only .project-specs {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .mobile-only .project-specs.col-1-2 {
+    width: 40vw;
+  }
+
+  .column-caption {
+    margin: 1em 2em 3em 2em;
+    text-align: center;
+  }
+
+  .project-intro p,
+  .project-content p {
+    margin-bottom: 1.5em;
+  }
+
+  .horizontal-line {
+    margin-top: 3em;
+    width: 85vw;
+  }
+
+  .pagination-container {
+    padding: 1.5em 0;
+  }
+
+  .previous-title, .next-title {
+    line-height: 2.1rem;
+    font-size: 1.6rem;
+  }
+
+  .about-title {
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    width: 85vw;
+  }
+
+  .about-text {
+    width: 85vw;
+  }
+
+  .about-desc.col-8-12 {
+    padding-right: 0;
+  }
+
+  .about-contact.col-4-12 {
+    padding-left: 0;
+  }
+
+  /* END - PORTFOLIO COLUMN */
 
   .about-image {
     display: none;
@@ -37,7 +164,23 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
     /* align-items: flex-end; */
   }
 
-  #project-list, #project-grid {
+  /* Portfolio Illustrations */
+  .gallery-grid {
+    /* width: 100%; */
+    margin: 2.5em auto;
+    column-width: 85vw;
+  }
+
+  .gallery-grid figure {
+    margin: 0;
+  }
+
+  .grid-caption {
+    margin: 1em 2em 3em 2em;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  /* #project-list, #project-grid {
     margin-top: 0;
   }
 
@@ -49,24 +192,24 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
   #project-grid .bold-project-name {
     line-height: 2.2rem;
     font-size: 1.6rem;
-  }
+  } */
 
-  #style-guide .grid, #sg-about .grid,
+  /* #style-guide .grid, #sg-about .grid,
   #sg-project1 .grid, #sg-project2 .grid, #project-list .grid {
     padding-left: 1.5em;
     padding-right: 1.5em;
-  }
+  } */
 
-  .main_nav, .footer {
+  /* .main_nav, .footer {
     margin-top: 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
     position: relative;
-  }
+  } */
 
-  .illustration-grid figure {
+  /* .illustration-grid figure {
     margin: 0;
-  }
+  } */
 
   .slide-dots {
     margin-top: 2.5em;
@@ -85,7 +228,7 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
     float: none;
   }
 
-  #construction-portfolio {
+  /* #construction-portfolio {
     text-align: left;
     margin: 10%;
   }
@@ -93,13 +236,17 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
   #construction-portfolio .main-title {
     line-height: 3.2rem;
     font-size: 2.4rem;
+  } */
+
+  #manulife #business-problem {
+    width: 85vw;
   }
 }
 
 @media (max-width: 690px) {
 
   /* Portfolio Illustrations */
-  .illustration-grid {
+  .gallery-grid {
     width: 100%;
     margin: 2.5em auto;
   }
@@ -107,9 +254,9 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
 
 @media screen and (max-width: 568px) {
 
-  #manulife-grid .main-title {
+  /* #manulife-grid .main-title {
     margin: 5em 2.5em 0 3em;
-  }
+  } */
 }
 
 /* Portrait and Landscape Mobile */
@@ -118,38 +265,46 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
   and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) { */
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 425px) {
 
   /* Portfolio General */
 
-  .main_nav_left, .footer_left {
-    /* margin-left: 2em; */
+  /* .main_nav_left, .footer_left {
     margin: 0;
-  }
+  } */
 
-  .main_nav_right, .footer_right {
-    /* margin-right: 2em; */
+  /* .main_nav_right, .footer_right {
+    margin-right: 2em;
     margin: 0;
-  }
+  } */
 
-  #caseit .project_brief .main-title {
+  /* #caseit .project_brief .main-title,
+  #illustrations .project_brief .main-title,
+  #graphic-archive .project_brief .main-title,
+  #tealeaves .project_brief .main-title,
+  #manulife .project_brief .main-title,
+  #locale .project_brief .main-title  {
     line-height: 2.4rem;
     font-size: 1.8rem;
     margin-left: 0;
     margin-right: 0;
-  }
+  } */
 
-    #caseit .previous-title, #caseit .next-title   {
+  /* #illustrations .previous-title,   #illustrations .next-title,
+  #graphic-archive .previous-title, #graphic-archive .next-title,
+  #tealeaves .previous-title, #tealeaves .next-title,
+  #manulife .previous-title, #manulife .next-title,
+  #locale .previous-title, #locale .next-title {
     text-align: center;
     line-height: 2.4rem;
     font-size: 1.8rem;
-  }
+  } */
 
-  .vertical-line {
+  /* .vertical-line {
     display: none;
-  }
+  } */
 
-  #project-list .project {
+  /* #project-list .project {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
@@ -159,83 +314,90 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
     padding-left: 0;
     padding-right: 0;
     position: relative;
-  }
+  } */
 
-  #project-list .main-title, #project-list .bold-project-name {
+  /* #project-list .main-title, #project-list .bold-project-name {
     line-height: 2.1rem;
     font-size: 1.6rem;
-  }
+  } */
 
-  .project-brief .main-title {
+  /* .project-brief .main-title {
     line-height: 2.4rem;
     font-size: 1.8rem;
-  }
+  } */
 
-  #project-grid .bold-project-name {
+  /* #project-grid .bold-project-name {
     margin: 1.2em 2.5em 0 2.5em;
     font-size: 1.2rem;
     line-height: 1.4rem;
     width: 16em;
-  }
+  } */
 
-  #project-grid .main-title {
+  /* #project-grid .main-title {
     font-size: 1.2rem;
     line-height: 1.4rem;
     margin: 2.6em 2.5em 0 2.5em;
-  }
+  } */
 
-  #manulife-grid .main-title  {
+  /* #manulife-grid .main-title  {
     font-size: 1.2rem;
     line-height: 1.4rem;
     margin: 4em 2.5em 0 2.5em;
-  }
+  } */
 
   /* Portfolio About */
 
-  .about-title {
+  /* .about-title {
     line-height: 2.6rem;
     font-size: 2rem;
-  }
+  } */
 
-  .copyright-text, .copyright-links {
+  /* .copyright-text, .copyright-links {
     margin: 1.5em 0;
-  }
+  } */
 
   /* Portfolio Projects */
 
-  #tealeaves, #manulife, #caseit,
-  #locale, #illustrations, #graphic-archive,
-  #project-list, #about {
-    margin-top: 0;
-  }
+  /* #tealeaves .project_brief,
+  #manulife .project_brief,
+  #caseit .project_brief,
+  #locale .project_brief,
+  #illustrations .project_brief,
+  #graphic-archive .project_brief {
+    margin-top: 3em;
+  } */
 
-  .project_brief {
+  /* #project-list {
+    margin-top: 8em;
+  } */
+
+  /* .project_brief {
     margin: 0;
-    padding: 0 1.5em 2em 1.5em;
-  }
+    padding: 0 1.5em;
+  } */
 
-  .project-hero {
+  /* .project-hero {
     margin-left: 0;
     margin-right: 0;
-  }
+  } */
 
-  .project-desc .col-8-12 {
+  /* .project-desc .col-8-12 {
     padding: 0;
   }
 
   .project-specs .col-4-12 {
     padding: 0;
-  }
+  } */
 
   .specs-title {
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .project-desc {
     width: 100%;
   }
 
-  .project-analysis {
+  /* .project-analysis {
     padding-top: 0;
   }
 
@@ -246,35 +408,35 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
 
   .overlap-middle-image {
     margin: 3em 0 3em 0;
-  }
+  } */
 
-  .final-product {
+  /* .final-product {
     background-color: #EBEBED;
-  }
+  } */
 
-  .illustration-grid figure figcaption {
+  /* .illustration-grid figure figcaption {
     padding-bottom: 4.5em;
-  }
+  } */
 
   .flickity-prev-next-button .flickity-button-icon {
     display: none; /* don't display the prev/next buttons on mobile */
   }
 
-  .project-pagination {
+  /* .project-pagination {
     margin-top: 6em;
   }
 
   .pagination-container {
     padding: 1.5em 0;
-  }
+  } */
 
-  .previous-title, .next-title {
+  /* .previous-title, .next-title {
     font-size: 1rem;
-  }
+  } */
 
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   #project-grid .bold-project-name {
     margin: 1.2em 2em 0 2em;
     width: 14em;
@@ -287,4 +449,4 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
   #manulife-grid .main-title  {
     margin: 4em 2.5em 0 2em;
   }
-}
+} */
