@@ -244,6 +244,7 @@ img {
 .column_project_brief .main-title {
   line-height: 2.7rem;
   font-size: 2rem;
+  margin-top: 0.25em;
 }
 
 .column-project-hero {
