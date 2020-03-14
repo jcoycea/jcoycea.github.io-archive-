@@ -250,6 +250,7 @@ img {
 .column-project-hero {
   margin-inline-start: 0;
   margin-inline-end: 0;
+  margin-left: 0;
 }
 
 .column_project_container {
