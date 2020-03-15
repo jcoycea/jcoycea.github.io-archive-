@@ -480,10 +480,10 @@ img {
   margin-top: 4em;
 }
 
-#colophon-title, #colophon-text,
+/* #colophon-title, #colophon-text,
 #colophon-text .about-links {
   color: grey;
-}
+} */
 
 #colophon-text .about-links {
   border-bottom: 1px dotted #A2A2A2;
