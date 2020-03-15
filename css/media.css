@@ -22,6 +22,7 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
 
   #nav-column {
     display: inline-block;
+    margin-bottom: 1.5em;
   }
 
   #project-column, #about-column {
@@ -61,6 +62,10 @@ SEPERATE CSS STYLESHEET FOR MEDIA QUERIES
 
   #project-column-thumbnail .gallery-grid figure img {
     width: 85vw;
+  }
+
+  #footer-column {
+    margin-top: 1.5em;
   }
 
   #footer-column .footer_left {
