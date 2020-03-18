@@ -493,6 +493,10 @@ img {
   margin-bottom: 1.5em;
 } */
 
+#caseit .desktop.project-specs.col-4-12 {
+  margin-bottom: 1.5em;
+}
+
 .prototype-gif {
   margin: 0;
 }
