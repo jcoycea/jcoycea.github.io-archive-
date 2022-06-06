@@ -1,0 +1,582 @@
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  cursor: url(http://www.sfu.ca/~jaquino/big-dot.png) 14 14, auto;
+}
+
+h1 { /* project description */
+  font-family: 'Canela Text Web', calluna, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
+}
+
+h2 { /* subheader 1 */
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+h3 { /* subheader 2 */
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+h4 { /* project details */
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+h5, figcaption { /* single photo captions */
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+	color: #666;
+}
+
+figcaption {
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
+p {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem; /* 0.85rem; */
+  line-height: 1.4rem;
+  letter-spacing: 0.04rem;
+}
+
+ul, li {
+  list-style: circle;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+}
+
+a {
+  color: #000;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+  cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
+}
+
+a:active, a:hover, a:focus {
+  color: #4151a3;
+  font-style: italic;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.intext-link {
+  color: #000;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 500;
+  border-bottom: 1px dotted #000;
+  padding-bottom: 0.01em;
+}
+
+.intext-link:hover {
+  color: #4151a3;
+}
+
+.project-specs p {
+  margin-top: 0.2rem;
+}
+
+/*
+ ----------------------------------------------------------------------------------
+ PORTFOLIO COLUMN CSS - FEBRUARY 22
+ ----------------------------------------------------------------------------------
+*/
+
+#tealeaves, #manulife, #caseit, #locale,
+#illustrations, #graphic-archive {
+  background: #F8F8F8;
+}
+
+#project-column-list,
+#project-column-thumbnail {
+  background: #333; /* #000000; */
+}
+
+#nav-column, #footer-column {
+  width: 20vw; /* 12em 16.667%; */
+  /* background: lightyellow; */
+  position: fixed;
+  overflow: hidden;
+}
+
+#nav-column {
+  display: inline-block;
+}
+
+#project-column {
+  width: 78vw;
+  margin-left: 20vw;
+}
+
+#project-column-list .main-title {
+  line-height: 2.9rem;
+  font-size: 2.15rem; /* 2.4rem; */
+
+  display: inline-block;
+  padding: 0;
+  margin: 0.25em 0;
+}
+
+#footer-column {
+  margin-bottom: 0.6em;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+  /* z-index: 100; */
+}
+
+.footer_left {
+  text-align: left;
+  margin: 0.3em 2em 0 0;
+  display: block;
+  color: #000;
+}
+
+#portfolio-quick-info,
+#porfolio-toggle-view {
+  text-align: left;
+  margin: 1em 1em 1em 0;
+}
+
+.side_nav {
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif; /* aktiv-grotesk-extended, sans-serif; */
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 1.25px;
+  color: #000;
+  display: block;
+}
+
+#project-column-list .side_nav, #project-column-list .index-btn,
+#project-column-list .toggle-btn, #project-column-list .footer_left,
+#project-column-thumbnail .side_nav, #project-column-thumbnail .index-btn,
+#project-column-thumbnail .toggle-btn, #project-column-thumbnail .footer_left {
+  color: #FFF;
+}
+
+.btnContainer {
+  float: left; /* NEW */
+  margin-top: 2em;
+}
+
+.toggle-btn {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  cursor: url(http://www.sfu.ca/~jaquino/small-dot.png) 7 7, auto;
+  color: #000;
+}
+
+.toggle-btn:hover {
+  color: #4151a3;
+}
+
+.toggle-btn.active {
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 0.01em;
+  /* text-decoration: line-through; */
+}
+
+.index-slash {
+  margin: 0 0.1em;
+}
+
+.inner-project-column {
+  width: 60vw;
+}
+
+.full-project-column {
+  width: 75vw;
+}
+
+.column_project_brief .main-title {
+  line-height: 2.7rem;
+  font-size: 2rem;
+  margin-top: 0.25em;
+}
+
+.column-project-hero {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-left: 0;
+}
+
+.column_project_container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column-caption {
+  text-align: right;
+  margin-left: 75%;
+  margin-right: 0;
+}
+
+.sub-title1 {
+  font-family: 'Canela Text Web', calluna, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+
+	font-size: 2rem;
+  letter-spacing: 0.01rem;
+  margin-top: 3rem;
+}
+
+.sub-title2 {
+  margin-bottom: 0.1rem;
+}
+
+#sub-intro {
+  margin-bottom: 0.08em;
+}
+
+.project-intro {
+  order: 1;
+  margin-bottom: 3rem;
+  padding-right: 40px;
+}
+
+.project-specs {
+  order: 2;
+  text-align: left;
+  /* float: right; */
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.project-specs.col-4-12 {
+  padding-right: 0;
+  padding-left: 80px;
+}
+
+.project-content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.specs-title {
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 1.25px;
+  color: #000;
+}
+
+.specs-content {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  color: #666;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.horizontal-line {
+  border: 1px dotted #000;
+  width: 75vw;
+  text-align: left;
+  margin-left: 0;
+}
+
+.project-last {
+  margin-bottom: 8em;
+}
+
+.pagination-container {
+  padding: 1.5em 0 0 0;
+}
+
+.next-title, .previous-title {
+  color: #000;
+  line-height: 2.7rem;
+  font-size: 2rem;
+
+  text-align: left;
+  margin: 0;
+}
+
+.previous-title:hover, .next-title:hover {
+  color: #4151a3;
+}
+
+.prev-project-name, .next-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-left: 0.4rem;
+}
+
+/* #project-column .main-title:hover {
+  border-bottom: 1px dotted #000;
+  padding-bottom: 1px;
+} */
+
+.bold-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-right: 0.4rem;
+}
+
+.project-link {
+  color: #FFF;
+}
+
+/***** PORTFOLIO SLIDESHOW *****/
+
+.carousel {
+  margin-bottom: 2em;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
+.carousel-cell-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+.slide-caption {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+
+  color: #666;
+  text-align: center;
+  padding: 0 3em;
+  width: 100%;
+}
+
+#about-column {
+  width: 70vw;
+  margin-left: 20vw;
+}
+
+.about-title {
+  line-height: 2.7rem;
+  font-size: 2rem;
+  width: 62vw;
+  margin: 0.25em 0;
+}
+
+.about-contact .specs-content {
+  margin: 0.5em 0;
+}
+
+.contact-title {
+  margin-top: 3em;
+}
+
+.about-links {
+  color: #000;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  border-bottom: 1px dotted #000;
+}
+
+.about-text {
+  margin-top: 2em;
+  width: 65vw;
+}
+
+.about-desc.col-8-12 {
+  /* font-size: 1rem; */
+  margin-bottom: 2rem;
+  padding-right: 40px;
+}
+
+.about-contact.col-4-12 {
+  padding-right: 0;
+  padding-left: 80px;
+  margin-bottom: 3em;
+}
+
+.about-text, .about-desc {
+  vertical-align: top;
+}
+
+#colophon-title {
+  margin-top: 4em;
+}
+
+/* #colophon-title, #colophon-text,
+#colophon-text .about-links {
+  color: grey;
+} */
+
+#colophon-text .about-links {
+  border-bottom: 1px dotted #A2A2A2;
+}
+
+/* #tealeaves .project-specs.col-4-12 {
+  margin-bottom: 1.5em;
+} */
+
+#caseit .desktop.project-specs.col-4-12 {
+  margin-bottom: 1.5em;
+}
+
+.prototype-gif {
+  margin: 0;
+}
+
+/***** PORTFOLIO ILLUSTRATIONS *****/
+
+.gallery-grid {
+	margin: 3em auto;
+	column-gap: 1em;
+  column-width: 25vw;
+}
+
+.gallery-grid figure,
+#project-column-thumbnail .gallery-grid figure {
+	margin: 0.75em 0;
+  display: inline-block;
+}
+
+.gallery-grid figure img,
+#project-column-thumbnail .gallery-grid figure img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-caption {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+
+  padding-bottom: 3em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #666;
+
+  /* text-align: right;
+  margin-left: 75%;
+  margin-right: 0; */
+}
+
+.process-book {
+  font-family: aktiv-grotesk, sans-serif; /* aktiv-grotesk-extended, sans-serif; */
+  text-transform: uppercase;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 1.25px;
+  color: #666;
+}
+
+#manulife #business-problem {
+  width: 50vw;
+}
+
+#project-column-thumbnail .gallery-grid {
+  column-gap: 1em;
+  column-width: 40vw;
+  margin-top: 0;
+}
+
+#project-column-thumbnail .main-title {
+  font-size: 0.9em;
+
+  display: inline-block;
+  padding: 0;
+  margin: 0.25em 0;
+  color: #FFF;
+}
+
+#project-column-thumbnail .bold-project-name {
+  font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+  padding-right: 0.2rem;
+}
+
+#project-column-thumbnail .gallery-grid .project-thumbnail,
+.gallery-grid .project-thumbnail {
+  margin-bottom: 1.5em;
+}
+
+#project-column-thumbnail #project-column {
+  width: 75vw;
+}
